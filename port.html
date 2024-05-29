@@ -1,0 +1,208 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="port.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Responsive portfolio website</title>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </nav>
+        <div class="header-next">
+            <p>Web Designing</p>
+            <h1>Hi, I am <span>Thanusha</span><br> From IIIT Nuzvid</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="ammu.jpg" alt="Thanusha">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am Thanusha. I am studying in RGUKT Nuzvid. I am taking CSE in BTech. I am interested in computer science. I studied 10th at GEMS. I am interested in reading books and listening to music.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-link active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-link" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-link" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active" id="skills">
+                    <ul>
+                        <li><span>Dsa</span><br>C-Programming</li>
+                        <li><span>Web-Development</span><br>Frontend</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024-current</span><br>BTech 2nd Year</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020-2022</span><br>PUC</li>
+                        <li><span>2020-2019</span><br>Class-10th</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+   <div class="container">
+   
+         <h1 class="sub-titles">My Services</h1>
+         <div class="services-list">
+         <div class="s1">
+               <h1 >Web Design</h1>
+               <p>Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. </p>
+               <a href="#">Click</a>
+         </div>
+           
+        <div class="s1">
+         <h1 >DSA</h1>
+         <p>A web designer is responsible for creating the design and layout of a website or web pages</p>
+         <a href="#">Click</a>
+        </div>
+
+        <div class="s1">
+         <h1 >Computing</h1>
+         <p>A web designer is responsible for creating the design and layout of a website or web pages</p>
+         <a href="#">Click</a>
+        </div>
+           
+          </div>
+         
+
+      </div>
+
+   </div>
+
+</div>
+<div id="work">
+    <div class="container">
+        <h1 class="sub-titles1">My Work</h1>
+        <div class="work-list">
+            <div class="w1">
+                <img src="w1.webp">
+                <div class="layer">
+                    <h1 >Web-Development</h1>
+                <p>A web designer is responsible for creating the design and layout of a website or web pages</p>
+                <a href="#">Click</a>
+                </div>
+               
+              
+               </div>  
+               <div class="w1">
+                <img src="w2.jpg">
+                <div class="layer">
+                    <h1 >Web-Development</h1>
+                <p>A web designer is responsible for creating the design and layout of a website or web pages</p>
+                <a href="#">Click</a>
+                </div>
+               
+               </div>  
+               <div class="w1">
+                <img src="w3.webp">
+                <div class="layer">
+                    <h1 >Web-Development</h1>
+                <p>A web designer is responsible for creating the design and layout of a website or web pages</p>
+                <a href="#">Click</a>
+                </div>
+               
+               
+               </div>  
+         
+        </div>
+
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-titles2">Contact Details</h1>  
+            <div class="contacts">
+                <div>
+                    <span>&#9993;</span>
+                    <p>someone@gmail.com</p>
+                </div>
+                <div>
+                    <span>&#9742;</span>
+                    <p>0123456789</p>
+                </div>
+                <div class="icons">
+                    
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-linkedin-square"></i>
+                    <i class="fa fa-instagram"></i>
+     
+    
+                </div>
+               <div>
+                <a href="#" class="btn">Download</a>
+               </div>
+                   
+             
+               
+                   
+               
+            </div> 
+          </div>
+        </div>
+     
+        <div class="contact-right">
+            <form >
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your email">
+                <textarea placeholder="your message" rows="6"></textarea>
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-link");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function openTab(tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active");
+        }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active");
+    }
+
+    
+</script>
+</body>
+</html>
